@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+body {
+    font-family: 'Big Shoulders Text', cursive;
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 820px;
+    background-image: url('img/foddiee.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.hero-section p {
+    color: white;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.about-section p,
+.about-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/* Carousel Section */
+.carousel-inner {
+    height: 700px;
+}
+
+.carousel-item img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Reservation Section */
+.reservation-section {
+    padding: 50px 30px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+
+.opening-time {
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 577px) and (max-width: 800px) {
+    .hero-section {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .about-section p,
+    .about-section h2 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .opening-time p span {
+        font-size: 15px;
+        text-align: center;
+    }
+}
